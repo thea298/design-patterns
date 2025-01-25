@@ -1,4 +1,4 @@
-package exam;
+package exam1;
 
 public abstract class OrderFactory1 {
 

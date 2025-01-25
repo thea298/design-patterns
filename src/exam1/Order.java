@@ -1,4 +1,4 @@
-package exam;
+package exam1;
 
 //Product in Factory method dp
 //Context int Strategy dp

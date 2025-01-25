@@ -1,11 +1,8 @@
 package creational.builder;
 
 public class Pizza {
-    @SuppressWarnings("unused")
     private String dough="";
-    @SuppressWarnings("unused")
     private String sauce="";
-    @SuppressWarnings("unused")
     private String topping="";
     public void setDough(String dough) {
         this.dough = dough;

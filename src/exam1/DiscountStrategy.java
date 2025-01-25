@@ -1,4 +1,4 @@
-package exam;
+package exam1;
 
 //Strategy interface
 public interface DiscountStrategy {

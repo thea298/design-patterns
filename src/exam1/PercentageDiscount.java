@@ -1,4 +1,4 @@
-package exam;
+package exam1;
 
 //Concrete startegy
 public class PercentageDiscount implements DiscountStrategy{

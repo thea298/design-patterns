@@ -1,4 +1,4 @@
-package exam;
+package exam1;
 
 public class BulkOrder extends Order{
     private int quantity;

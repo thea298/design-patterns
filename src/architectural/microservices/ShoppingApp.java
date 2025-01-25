@@ -9,6 +9,7 @@ public class ShoppingApp {
 
         catalog.searchByProduct("laptop");
         cart.addProduct("lenovo");
+        discount.applyDiscount("10%");
         ordering.pay();
     }
 }
