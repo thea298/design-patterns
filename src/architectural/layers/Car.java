@@ -5,14 +5,14 @@ public class Car {
     private String licensePlate;
     private String brand;
     private String model;
-    private double retalPrice;
+    private double rentalPrice;
     private boolean available;
     
-    public Car(String licensePlate, String brand, String model, double retalPrice) {
+    public Car(String licensePlate, String brand, String model, double rentalPrice) {
         this.licensePlate = licensePlate;
         this.brand = brand;
         this.model = model;
-        this.retalPrice = retalPrice;
+        this.rentalPrice = rentalPrice;
         this.available = true;
     }
     
@@ -40,12 +40,12 @@ public class Car {
         this.model = model;
     }
 
-    public double getRetalPrice() {
-        return retalPrice;
+    public double getRentalPrice() {
+        return rentalPrice;
     }
 
-    public void setRetalPrice(double retalPrice) {
-        this.retalPrice = retalPrice;
+    public void setRentalPrice(double rentalPrice) {
+        this.rentalPrice = rentalPrice;
     }
 
     public boolean isAvailable() {
@@ -58,8 +58,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car [licensePlate=" + licensePlate + ", brand=" + brand + ", model=" + model + ", retalPrice="
-                + retalPrice + ", available=" + available + "]";
+        return "Car [licensePlate=" + licensePlate + ", brand=" + brand + ", model=" + model + ", rentalPrice="
+                + rentalPrice + ", available=" + available + "]";
     }  
 
 }

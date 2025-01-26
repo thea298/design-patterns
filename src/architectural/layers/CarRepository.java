@@ -16,7 +16,7 @@ public class CarRepository {
         return this.cars;
     }
 
-    public void addCar(String licensePlate, String brand, String model, double retalPrice){
+    public void addCar(String licensePlate, String brand, String model, double rentalPrice){
         for(Car car:cars){
             if(car.getLicensePlate().equals(licensePlate)){
                 System.out.println("Car already exists.");
@@ -24,10 +24,10 @@ public class CarRepository {
                 //throw new IllegalArgumentException("Car already exists"); stops the whole program. u can use try catch to only sotp the method
             }
         }
-        cars.add(new Car(licensePlate, brand, model, retalPrice));
+        cars.add(new Car(licensePlate, brand, model, rentalPrice));
     }
 
-    public void removeCar(String licensePlate, String brand, String model, double retalPrice){
+    public void removeCar(String licensePlate, String brand, String model, double rentalPrice){
         for(Car car:cars){
             if(car.getLicensePlate().equals(licensePlate)){
                 cars.remove(car);
