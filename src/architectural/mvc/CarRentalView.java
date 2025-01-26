@@ -5,7 +5,7 @@ import java.util.List;
 //View
 public class CarRentalView {
 
-    public void displayAvailabeCars(List<Car> cars){
+    public void displayAvailableCars(List<Car> cars){
         for(Car car: cars){
             System.out.println(car);//implicit call to car.toString()
         }

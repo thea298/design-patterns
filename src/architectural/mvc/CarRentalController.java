@@ -19,7 +19,7 @@ public class CarRentalController {
                 availableCars.add(car);
 
         }
-        view.displayAvailabeCars(cars);
+        view.displayAvailableCars(cars);
     }
 
     public void rentCar(String licensePlate){
