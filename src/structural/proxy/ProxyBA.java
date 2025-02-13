@@ -13,24 +13,19 @@ public class ProxyBA implements BankAccount{
     }
 
     public boolean authenticate(String password){
-        if(this.password.equals(password)) return true;
-        else{
-        System.out.println("Authentication failed");
+        if(this.password.equals(password))  return true;
+        else                                System.out.println("Authentication failed");
         return false;
     }
-}
+
 
     @Override
     public void deposit(double amount) {
         System.out.println("Password sir: ");
         Scanner scanner=new Scanner(System.in);
         String input=scanner.next();
-        if(this.authenticate(input)){
-            this.account.deposit(amount);
-        }
-        else{
-            System.out.println("Cannot deposit");
-        }
+        if(this.authenticate(input))this.account.deposit(amount);
+        else                        System.out.println("Cannot deposit");
         scanner.close();
     }
 
@@ -39,12 +34,8 @@ public class ProxyBA implements BankAccount{
         System.out.println("Password sir: ");
         Scanner scanner=new Scanner(System.in);
         String input=scanner.next();
-        if(this.authenticate(input)){
-            this.account.withdraw(amount);
-        }
-        else{
-            System.out.println("Cannot withdraw");
-        }
+        if(this.authenticate(input))this.account.withdraw(amount);
+    else                            System.out.println("Cannot withdraw");
         scanner.close();
     }
 
@@ -58,11 +49,9 @@ public class ProxyBA implements BankAccount{
             scanner.close();
             return this.account.getBalance();
         }
-        else{
-            System.out.println("Cannot get balance");
-            scanner.close();
-            return 0;
-        }
+        else    System.out.println("Cannot get balance");
+        scanner.close();
+        return 0;
     }
 
 }

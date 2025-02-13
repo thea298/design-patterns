@@ -1,7 +1,7 @@
 package exam1;
 
 //Product in Factory method dp
-//Context int Strategy dp
+//Context in Strategy dp
 public abstract class Order {
     private FoodItem foodItem;
     private DiscountStrategy discountStrategy;

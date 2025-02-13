@@ -2,8 +2,7 @@ package behavioral.template;
 
 public class Client {
     public static void main(String[] args) {
-        OnlineOrdering online=null;
-        online=new GroceriesOrdering();
+        OnlineOrdering online=new GroceriesOrdering();
         online.purchase();
 
         online=new ClothingOrdering();

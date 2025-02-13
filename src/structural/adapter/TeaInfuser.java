@@ -10,7 +10,7 @@ public class TeaInfuser implements TeaBag{
 
     @Override
     public void steep() {
-        System.out.println("using the tea infuser: ");
+        System.out.println("using the tea infuser.");
         this.teaLeaf.soak();
     }
     
