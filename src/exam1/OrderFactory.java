@@ -1,16 +1,8 @@
 package exam1;
 
-public class OrderFactory {
+public abstract class OrderFactory {
     
     //Factory method
-    public Order createOrder(FoodItem foodItem, int quantity){
-        if(quantity == 1){
-            return new NormalOrder(foodItem);
-        }
-        else if(quantity > 1){
-            return new BulkOrder(foodItem, quantity);
-        }
-        return null;
-    }
+    public abstract Order createOrder(FoodItem foodItem, int quantity);
 
 }
